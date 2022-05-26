@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/style.css">
     <title>Registro</title>
+</head>
+<body>
+    <header>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
 </head>
 <body>
     <header>
@@ -39,85 +51,78 @@
             <i class="fa fa-bars burguer"></i>
         </div>
     </header>
-    <main>
-        <form action="/datos" method="post">
-
-            <div>
-                <input type="text" name="nombre" placeholder="Indique su nombre" required id="nombre" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. john">
-            </div>
-            <div>
-                <input type="text" name="apellido" placeholder="Indique su apellido" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. john">
-            </div>
-
-            <div>
-                <input type="text" name="usuario" placeholder="Indique su usuario">
-            </div>
-            <div>
-                <h3>Fecha de nacimiento</h3>
-                <input type="date" name="fechaNacimiento" placeholder="fecha de nacimiento">
-            </div>
-            <div>
-                <input type="text" name="domicilio" placeholder="Domicilio">
-            </div>
-            <div>
-                <h3>Perfil de Usuario</h3>
-                <input type="radio" name="Perfil de Usuario" value="comprador">
-                <p>comprador</p>
-                <input type="radio" name="Perfil de Usuario" value="vendedor">
-                <p>vendedor</p>
-            </div>
-            <div>
-                <div>
-                    <h3>Intereses</h3>
-                    <input type="checkbox" name="Intereses" value="Electro">
+    <main class="main-register">
+        <form action="" method="" class="register_Box">
+            <section>
+                <input type="text" name="nameSurname" id="nameSurname" placeholder="Nombre y Apellido">
+            </section>
+            <section>
+                <input type="text" name="username" id="username" placeholder="Nombre de Usuari@">
+            </section>
+            <section>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </section>
+            <section>
+                <label for="birthDay">Fecha de nacimiento</label>
+                <input type="date" name="birthDay" id="birthDay">
+            </section>
+            <section>
+                <input type="text" name="adress" id="adress" placeholder="Domicilio">
+            </section>
+            <section>
+                <label for="userType">Perfil de Usuario</label>
+                <div class="userTypeBox">
+                    <input type="radio" name="userType" id="buyer">
+                    <p>Comprador</p>
+                    <input type="radio" name="userType" id="seller">
+                    <p>Vendedor</p>
+                </div>
+            </section>
+            <section>
+                <label for="interests">Intereses</label>
+                <div class="userInterest">
+                    <input type="checkbox" name="interest1" id="electro">
                     <p>Electro</p>
-                    <input type="checkbox" name="Intereses" value="Moda">
+                    <input type="checkbox" name="interest2" id="moda">
                     <p>Moda</p>
-                    <input type="checkbox" name="Intereses" value="Hogar">
+                    <input type="checkbox" name="interest3" id="hogar">
                     <p>Hogar</p>
-                    <input type="checkbox" name="Intereses" value="Juguetería">
-                    <p>Juguetería</p>
-                    <input type="checkbox" name="Intereses" value="Vida sana">
+                    <input type="checkbox" name="interest4" id="juguetes">
+                    <p>Jugueteria</p>
+                    <input type="checkbox" name="interest5" id="salud">
                     <p>Vida Sana</p>
                 </div>
-            </div>
-
-            <div>
-                <h3>Foto del Usuario</h3>
-                <input type="file" name="Fotoperfil" accept=".jpg">
-            </div>
-            <div>
-                <input type="password" name="contraseña" placeholder="contraseña"pattern="[a-z]{1,15}" title="Username should only contain lowercase letters>
-            </div>
-            <div>
-                <input type="password" name="contraseña" placeholder="confirmá tu contraseña"pattern="[a-z]{1,15}" title="Username should only contain lowercase letters>
-            </div>
-
-            
-            <div>
-                <button type="submit"  onclick="location.href='/'" value="Registrarme">Registrarme</button>
-            </div>
-            <div>
-                <button type="reset" value="Borrar datos"> Borrar</button>
-            </div>
+            </section>
+            <section>
+                <label for="profilePhoto">Foto de Usuario</label>
+                <input type="file" name="profilePhoto" id="profilePhoto">
+            </section>
+            <section>
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </section>
+            <section>
+                <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar Contraseña">
+            </section>
+            <button type="submit" onclick="location.href='/'">Enviar</button>
+            <button type="reset">Borrar</button>
         </form>
 
     </main>
 
     <footer>
-        <section>
+        <section class="section-footer">
             <i class="fas fa-credit-card"></i>
             <h1>Pagá con tarjeta o efectivo</h1>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Ysiempre es seguro! </p>
         </section>
 
-        <section>
+        <section class="section-footer">
             <i class="fas fa-gift"></i>
             <h1>Envío gratis desde los $2500</h1>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </section>
 
-        <section>
+        <section class="section-footer">
             <i class="fas fa-user-shield iconsFooter"></i>
             <h1>Seguridad de principio a fin</h1>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>

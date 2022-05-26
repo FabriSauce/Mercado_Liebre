@@ -166,6 +166,137 @@ article div.elementos-caja{
     font-size: 16px;
 }
 
+.section-footer i{
+    color: #1259c3;
+}
+
+.section-footer{
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+/*   estilos de login  */
+.login-form{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.caja-login section input{
+    outline: none;
+    border-style: none;
+    border-radius: 0.3rem;
+    padding: 10px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.caja-login button{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.caja-login button:hover{
+    background-color: #0022aa;
+}
+
+.main-register{
+    display: flex;
+    background-color: #ebebeb;
+    width: 100%;
+    justify-content: center;
+}
+
+.formulario{
+    margin: 10px auto;
+}
+
+.formulario button{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.register_Box{
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.register_Box section input{
+    outline: none;
+    border-style: none;
+    border-radius: 0.3rem;
+    padding: 10px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.register_Box section label{
+    display: flex;
+    font-weight: bold;
+    margin: 5px auto;
+}
+.userInterest,
+.userTypeBox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.userInterest,
+.userTypeBox{
+    margin: 10px auto;
+}
+
+.userTypeBox input[type="radio"]{
+    margin: auto 0;
+    width: 20%;
+}
+
+.userTypeBox p{
+    width: 30%;
+    text-align: start;
+}
+
+.userInterest p{
+    width: 70%;
+    text-align: start;
+    margin: 10px 0;
+}
+
+.userInterest input[type="checkbox"]{
+    margin: auto 0;
+    width: 20%;
+}
+
+.register_Box button{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.register_Box button:hover{
+    background-color: #0022AA;
+}
 
 
 @media (min-width: 361px){
