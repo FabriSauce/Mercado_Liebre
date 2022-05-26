@@ -1,0 +1,202 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ html,body{
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+    width: 100%;
+}
+header{
+    background-color: #EAC926;
+}
+
+.header-2{
+    padding: 5%;
+}
+.header-2 p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav{
+    font-size: 12px;
+}
+
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-size: 12px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    visibility: hidden;
+}
+
+header .form .input{
+    background-color: #fff;
+    border:  1px solid black;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+ header .form .submit{
+    background-color: #fff;
+    border: 1px solid black;
+    color: #666;
+    width: 10%;
+}
+
+
+/*       menu hamburguesa        */
+.burguer-menu{
+    text-align: center;
+}
+
+.burguer-menu i{
+    color: #fff;
+    background-color: #0044aa;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 38px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.banner img{
+    max-width: 100%;
+    margin: 0px 0px -4px 0px;
+}
+
+
+.descuentos, .descripciones{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.descuentos{
+    color: #39b54a;
+}
+
+.precios{
+    font-size: 18px;
+
+}
+
+.descripciones{
+    display: none;
+    margin-top: 20px;
+}
+
+h3, .descripciones{
+    color: #666;
+}
+
+section{
+    text-align: center;
+}
+
+section .banner img{
+    width: 100%;
+}
+
+i{
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i, .descuentos{
+    color: #39b54a;
+}
+
+
+article div.elementos-caja{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+}
+
+.elementos-caja i{
+    font-size: 16px;
+}
+
+
+
+@media (min-width: 361px){
+    main section article .descripcion{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+     nav ul li a{
+        visibility: visible;
+    }
+
+    .burguer-menu i{
+        visibility: hidden;
+    }
+    
+}
+
+@media (min-width: 769px){
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+     nav ul li a{
+        visibility: visible;
+    }
+
+    .burguer-menu i{
+        visibility: hidden;
+    }
+}
