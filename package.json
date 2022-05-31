@@ -1,7 +1,6 @@
 {
   "name": "mercadoliebre",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -11,5 +10,16 @@
   "dependencies": {
     "express": "^4.18.1",
     "nodemon": "^2.0.16"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabriSauce/Mercado_Liebre.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/FabriSauce/Mercado_Liebre/issues"
+  },
+  "homepage": "https://github.com/FabriSauce/Mercado_Liebre#readme",
+  "description": ""
 }
