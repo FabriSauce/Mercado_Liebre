@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended:false}))
 const directory=path.join(__dirname,"/public");
 
 app.listen(process.env.PORT || 3030,()=>{
-    console.log("funcionando")
+    console.log("funcionando en el puerto 3030")
 });
 
 
